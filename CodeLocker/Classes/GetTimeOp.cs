@@ -466,7 +466,7 @@ namespace CabalsCorner.CodeLocker.Classes
 			const byte serverReplyTime = 40;
 
 			//Get the seconds part
-			ulong intPart = BitConverter.ToUInt32(ntpData, serverReplyTime);
+			ulong intPart = BitConverter.ToUInt32(ntpData, serverReplyTime); 
 
 			//Get the seconds fraction
 			ulong fractPart = BitConverter.ToUInt32(ntpData, serverReplyTime + 4);
